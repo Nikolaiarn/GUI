@@ -1,7 +1,6 @@
 
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QFileDialog, 
-                            QSlider, QSizePolicy, QFrame, 
-                            QComboBox, QAction, QWidgetAction, QSpacerItem)
+QSlider, QSizePolicy, QFrame, QGraphicsScene, QGraphicsView, QComboBox, QAction, QWidgetAction, QSpacerItem)
 from PyQt5.QtGui import QColor, QPixmap, QPainter, QPen, QImage, QPalette, QLinearGradient
 from PyQt5.QtCore import Qt, QTimer, QDateTime, pyqtSlot
 import cv2
@@ -15,11 +14,6 @@ from os.path import isfile, join
 from cv2 import VideoCapture, CAP_PROP_FPS, CAP_PROP_FRAME_COUNT
 import vlc
 from collections import defaultdict, Counter
-
-
-from PyQt5.QtWidgets import QGraphicsView, QGraphicsScene, QPushButton, QVBoxLayout, QFileDialog
-from PyQt5.QtGui import QPixmap, QImage, QPainter, QPen
-from PyQt5.QtCore import Qt
 
 class ImageWindow(QMainWindow):
     def __init__(self, img):
